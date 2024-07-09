@@ -1,0 +1,25 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <context-param>
+        <param-name>jdbcUrl</param-name>
+        <param-value>jdbc:mysql://localhost:3306/tu_base_de_datos</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcUser</param-name>
+        <param-value>tu_usuario</param-value>
+    </context-param>
+    <context-param>
+        <param-name>jdbcPassword</param-name>
+        <param-value>tu_contraseña</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>ActividadServlet</servlet-name>
+        <servlet-class>controlador.ActividadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActividadServlet</servlet-name>
+        <url-pattern>/ActividadServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
